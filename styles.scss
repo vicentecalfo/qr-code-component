@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+$white: hsl(0, 0%, 100%);
+$lightGray: hsl(212, 45%, 89%);
+$grayishBlue: hsl(220, 15%, 55%);
+$darkblue: hsl(218, 44%, 22%);
+$font: 'Outfit', sans-serif;
+
+body {
+    background-color: $lightGray;
+    box-sizing: border-box;
+    /* Estilos somente para centralizar (apresentação) */
+    margin: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.qrcode-card {
+    width: 280px;
+    background-color: $white;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: $font;
+    text-align: center;
+
+    .qrcode-card__img {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .qrcode-card__info {
+        padding: 15px 15px 0px 15px;
+
+        h1 {
+            font-size: 22px;
+            color: $darkblue;
+        }
+
+        p {
+            font-size: 15px;
+            color: $grayishBlue;
+        }
+    }
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-family: $font;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: $darkblue;
+}
